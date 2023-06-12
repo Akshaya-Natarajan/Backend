@@ -3,6 +3,7 @@ const Crackers = require("../Model/Crackerlist")
 // create cracker
 const createCracker = async(req,res) => {
     console.log(req.body);
+    
     let user = req.userId
     let pr_no = `PR-${Math.floor(1000+Math.random()*9000)}`
 
